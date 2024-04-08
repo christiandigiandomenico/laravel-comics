@@ -6,6 +6,21 @@ nav {
     background-color: white;
     color: black;
 
+    .additional-sites {
+        background-color: $primaryColor;
+
+        .space-nav {
+            max-width: 1550px;
+            text-align: right;
+        }
+
+        span {
+            color: white;
+            font-size: 12px;
+            margin-left: 40px;
+        }
+    }
+
     .nav-content {
         display: flex;
         justify-content: space-between;
@@ -57,7 +72,7 @@ nav {
 
     img {
         height: 400px;
-        width: 100vw;
+        width: 100%;
         object-fit: cover;
         object-position: top;
     }
@@ -99,14 +114,21 @@ nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            gap: 50px;
+            gap: 30px;
             list-style-type: none;
+            padding-left: 0px;
+            margin-top: 0px;
+            margin-bottom: 0px;
 
             li {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 gap: 10px;
+
+                span {
+                    color: white;
+                }
 
                 img {
                     object-fit: contain;
@@ -137,7 +159,7 @@ nav {
 }
 
 .navbar-links {
-    background-image: url(/img/footer-bg.jpg);
+    background-image: url(../img/footer-bg.jpg);
     background-size: cover;
     position: relative;
 
@@ -158,6 +180,10 @@ nav {
 
     .links-list {
 
+        h3 {
+            color: white;
+        }
+
         ul {
             list-style-type: none;
             text-align: start;
@@ -165,6 +191,7 @@ nav {
 
             li {
                 text-align: start;
+                color: rgb(177, 177, 177);
             }
         }
     }
@@ -189,6 +216,7 @@ nav {
         border: 1px solid $primaryColor;
         background-color: transparent;
         padding: 15px 20px;
+        color: white;
     }
 
     .follow-us {

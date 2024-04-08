@@ -1,5 +1,17 @@
 <nav>
 
+    <div class="additional-sites">
+
+        <div class="space-nav">
+
+        <span>DC POWER™ VISA©</span>
+
+        <span>ADDITIONAL DC SITES <i class="fa-solid fa-caret-down"></i></span>
+
+        </div>
+
+    </div>
+
     <div class="nav-content">
 
         <div class="logo">
