@@ -8,6 +8,12 @@
     @vite('resources/js/app.js')
 </head>
 <body>
+
+    @include('partials/header')
+
+    @include('partials/main')
+
+    @include('partials/footer')
     
 
 </body>

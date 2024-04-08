@@ -1,1 +1,206 @@
+@use './partials/variables.scss' as *;
+
 @import "~bootstrap/scss/bootstrap";
+
+nav {
+    background-color: white;
+    color: black;
+
+    .nav-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1270px;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .logo img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .nav-links {
+        ul {
+            list-style-type: none;
+            display: flex;
+            gap: 30px;
+
+            li {
+                font-weight: bold;
+
+                &.active {
+                    color: $primaryColor;
+                    border-bottom: 2px solid $primaryColor;
+                }
+            }
+        }
+    }
+}
+
+.main-content {
+    background-color: #1c1c1c;
+    position: relative;
+
+    .current-series {
+        background-color: $primaryColor;
+        width: 200px;
+        text-align: center;
+        padding: 10px;
+        font-size: 20px;
+        font-weight: bold;
+
+        position: absolute;
+        top: 380px;
+        left: 300px;
+    }
+
+    img {
+        height: 400px;
+        width: 100vw;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    .text-content {
+        font-size: 42px;
+        padding: 24px;
+        max-width: 1270px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+
+    .learn-more {
+        text-align: center;
+
+        button {
+            border: none;
+            background-color: $primaryColor;
+            padding: 10px 40px;
+            font-size: 12px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+    }
+}
+
+.main-content-merchandise {
+    background-color: $primaryColor;
+
+    .merchandise-content {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        max-width: 1270px;
+        margin: auto;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 50px;
+            list-style-type: none;
+
+            li {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+
+                img {
+                    object-fit: contain;
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+        }
+    }
+}
+
+.comic {
+    width: calc(100% / 6);
+
+    img {
+        width: 185px;
+        height: 185px;
+    }
+
+    h4 {
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+}
+
+.navbar-links {
+    background-image: url(/img/footer-bg.jpg);
+    background-size: cover;
+    position: relative;
+
+    img {
+        position: absolute;
+        right: 100px;
+        bottom: -70px;
+        z-index: 1;
+    }
+}
+
+.links {
+    max-width: 1270px;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+
+    .links-list {
+
+        ul {
+            list-style-type: none;
+            text-align: start;
+            padding-left: 0;
+
+            li {
+                text-align: start;
+            }
+        }
+    }
+}
+
+.footer-information-container {
+    background-color: #303030;
+    z-index: 99;
+    position: relative;
+}
+
+.footer-information {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1270px;
+    margin: auto;
+    padding: 20px;
+    z-index: 99;
+
+    button {
+        border: 1px solid $primaryColor;
+        background-color: transparent;
+        padding: 15px 20px;
+    }
+
+    .follow-us {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            font-size: 20px;
+            color: $primaryColor;
+            font-weight: bold;
+        }
+
+        img {
+            margin-left: 20px;
+        }
+    }
+}
