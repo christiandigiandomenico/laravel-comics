@@ -10,10 +10,12 @@
 
     <div class="text-content">
 
+        @foreach($comics as $comicItem)
         <div class="comic">
-            <img src=" " :alt=" ">
-            <h4> </h4>
+            <img src="{{$comicItem['thumb']}} " :alt="{{$comicItem['thumb']}}">
+            <h4>{{$comicItem['series']}}</h4>
         </div>
+        @endforeach
 
     </div>
 
